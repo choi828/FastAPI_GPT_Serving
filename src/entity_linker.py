@@ -4,7 +4,7 @@ import re
 from neo4j import GraphDatabase
 from src.neo4j_connector import neo4j_connector
 
-API_KEY = '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'
+API_KEY = 'your-api-key'
 client = OpenAI(api_key=API_KEY)
 
 # ft:gpt-3.5-turbo-1106:personal::94KbmS0e
