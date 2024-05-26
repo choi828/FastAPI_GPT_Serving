@@ -3,8 +3,9 @@ import pandas as pd
 import re
 from neo4j import GraphDatabase
 from src.neo4j_connector import neo4j_connector
+import os
 
-API_KEY = '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'
+API_KEY = os.getenv("OPENAI_API_KEY")
 # openai.api_key = API_KEY
 client = OpenAI(api_key=API_KEY)
 
